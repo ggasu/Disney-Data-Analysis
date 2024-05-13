@@ -1,41 +1,58 @@
-Disney+ Veri Analizi ve Özellik Tahmini
-Bu proje, Disney+ platformundaki içeriklerin veri analizini ve içerik özelliklerinin tahmin edilmesini amaçlamaktadır.
+TÜRKÇE (TR)
 
-Proje Amaçları
-Disney+ platformunda bulunan içeriklerin türlerine göre dağılımını görselleştirmek.
-En çok içeriğe sahip olan ülkeleri belirlemek ve bunları görselleştirmek.
-Yıllara göre Disney+ platformuna eklenen içeriklerin sayısını incelemek.
-İçeriklerin derecelendirme (rating) dağılımını görselleştirmek.
-İçerik özelliklerinin (örneğin, yayınlanma yılı, süre, oyuncu sayısı) korelasyonunu incelemek.
-İçerik özelliklerini kullanarak bir model oluşturup, içerik rating'lerini tahmin etmek.
-Veri Kaynağı
-Bu projede kullanılan veri seti, Kaggle platformundan alınmış bir veri setidir ve platformda bulunan içeriklerin listesini içermektedir. 
+Bu proje, Disney+ platformunda bulunan içeriklerin veri analizi ve görselleştirmesi için yapılmıştır. Projede, Python programlama dili kullanılarak pandas, matplotlib, seaborn ve scikit-learn gibi kütüphanelerden yararlanılmıştır.
 
-Kullanılan Kütüphaneler
-Pandas: Veri işleme için kullanılmıştır.
-Matplotlib ve Seaborn: Veri görselleştirmesi için kullanılmıştır.
-NumPy: Matematiksel işlemler için kullanılmıştır.
-Scikit-learn: Makine öğrenimi modeli için kullanılmıştır.
+## Kurulum
+
+1. Projenin dosyalarını bilgisayarınıza indirin.
+2. Python yüklü değilse, [Python'u indirip yükleyin](https://www.python.org/downloads/).
+3. Gerekli kütüphaneleri yüklemek için terminal veya komut istemcisinde aşağıdaki komutu çalıştırın:
+    
+    pip install pandas matplotlib seaborn scikit-learn   
+   
+
+## Kullanım
+
+1. `disney_plus.csv` dosyasını projenin ana dizinine ekleyin.
+2. Kodları bir Python IDE'sinde veya terminalde açın.
+3. Kodları sırayla çalıştırarak veri analizi ve görselleştirmeyi gözlemleyin.
+
+## Projenin İçeriği
+
+1. Veri Yükleme ve Temizleme: `disney_plus.csv` dosyası yüklenir ve eksik değerler doldurulur.
+2. Veri Görselleştirme: İçerik türü dağılımı, en çok içerik üretilen ülkeler, yıllara göre eklenen içerikler ve içerik ratinglerinin dağılımı görselleştirilir.
+3. Özellik Mühendisliği: Veri setine bazı özellikler eklenir ve bu özelliklerin önemi belirlenir.
+4. Modelleme: Random Forest Regressor modeli kullanılarak içerik ratinglerinin tahmini yapılır.
 
 
-Kurulum
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Bu depoyu yerel makinenize klonlayın.
 
-Python yüklü değilse, Python'un resmi web sitesinden indirip yükleyin.
+ENGLISH (EN)
 
-Gerekli bağımlılıkları yüklemek için terminal veya komut istemcisinde şu komutu çalıştırın:
-Copy code
-pip install -r requirements.txt
+This project is aimed at analyzing and visualizing the content available on the Disney+ platform. Python programming language is used in the project, leveraging libraries such as pandas, matplotlib, seaborn, and scikit-learn.
 
-Jupyter Notebook veya tercih ettiğiniz bir Python IDE ile 'disneyplus.ipynb' dosyasını açın.
+## Installation
 
-Kullanım
-Jupyter Notebook veya Python IDE ile 'disneyplus.ipynb' dosyasını açın.
-Her hücreyi sırasıyla çalıştırarak kodu inceleyin veya istediğiniz değişiklikleri yapın.
-Veri analizi sonuçlarını ve görselleştirmeleri gözlemleyin.
-İlgili bölümlerde modeli eğitin ve sonuçları değerlendirin.
+1. Download the project files to your computer.
+2. If Python is not installed, [download and install Python](https://www.python.org/downloads/).
+3. Install the required libraries by running the following command in your terminal or command prompt:
+    
+    pip install pandas matplotlib seaborn scikit-learn
+    
 
-Katkılar
-Herhangi bir hata bildirmek, sorunları düzeltmek veya yeni özellikler eklemek için bir GitHub issue açabilir veya bir pull request gönderebilirsiniz.
+## Usage
+
+1. Add the `disney_plus.csv` file to the root directory of the project.
+2. Open the code in a Python IDE or a terminal.
+3. Execute the code sequentially to observe data analysis and visualization.
+
+## Project Contents
+
+1. Data Loading and Cleaning: Load the `disney_plus.csv` file and fill in missing values.
+2. Data Visualization: Visualize content type distribution, top countries with the most content, content added over the years, and distribution of content ratings.
+3. Feature Engineering: Add some features to the dataset and determine their importance.
+4. Modeling: Use a Random Forest Regressor model to predict content ratings.
+
+
+
